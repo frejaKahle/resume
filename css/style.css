@@ -1,0 +1,79 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+.bkgnd {
+    border-radius: 1em;
+    margin-top: 150px;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+:root {
+    --dark-bkg: #202424;
+    --light-bkg: white;
+    --dark-text: white;
+    --light-text: black;
+}
+
+.spanhead {
+    font-size: x-large;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.spanborder {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0.75em;
+    padding-left: 0.35em;
+    padding-right: 0.35em;
+    padding-bottom: 0.125em;
+}
+
+.tlta {
+    text-align: left !important;
+}
+
+.text-back,
+.text-back>* {
+    background-color: var(--light-bkg);
+    color: var(--light-text);
+    border-radius: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    opacity: 1.0;
+}
+
+body.dark,
+body.dark .text-back,
+body.dark .text-back>* {
+    background-color: var(--dark-bkg);
+    color: var(--dark-text);
+}
+
+.text-back.rnd-top {
+    border-radius: 0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.text-back.rnd-bot {
+    border-radius: 0;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.0;
+}
+
+.dark .color-overlay {
+    opacity: 0.6;
+}
