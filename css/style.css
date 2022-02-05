@@ -36,18 +36,23 @@
 }
 
 .text-back,
-.text-back>* {
+.text-back *,
+nav.text-back .brand-logo {
     background-color: var(--light-bkg);
     color: var(--light-text);
     border-radius: 1em;
     padding-left: .5em;
     padding-right: .5em;
-    opacity: 1.0;
+}
+
+nav.text-back,
+nav.text-back * {
+    border-radius: 0;
 }
 
 body.dark,
 body.dark .text-back,
-body.dark .text-back>* {
+body.dark .text-back * {
     background-color: var(--dark-bkg);
     color: var(--dark-text);
 }
@@ -76,4 +81,28 @@ body.dark .text-back>* {
 
 .dark .color-overlay {
     opacity: 0.6;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.textlist li {
+    list-style-type: circle !important;
+}
+
+.anchor {
+    scroll-margin-top: 100px;
+}
+
+.boxborder {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 1em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
 }

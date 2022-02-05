@@ -9,10 +9,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
 </head>
 
-<body class="dark">
+<body class="dark" id="home">
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large teal darken-2">
-            <i class="large material-icons">menu</i>
+            <i class="large material-icons" style="font-size: 36px;">menu</i>
         </a>
         <ul>
             <li><a href="../Resume.pdf" target="_blank" class="btn-floating teal darken-2"><i class="material-icons">file_download</i></a></li>
@@ -21,7 +21,46 @@
             <li><a href="javascript:toggleViewMode()" id="view_toggle_button" class="btn-floating teal darken-2"><i class="material-icons">brightness_7</i></a></li>
         </ul>
     </div>
-    <div class="parallax-container" style="height: 550px">
+
+    <div class="navbar-fixed">
+        <nav role="navigation" class="text-back">
+            <div class="container" style="width: 100%;">
+                <div class="row">
+                    <div class="col" style="width:45%">
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                        </ul>
+                    </div>
+                    <div class="col" style="width:10%">
+                        <a id="logo-container" href="#home" class="brand-logo center" style="font-size: 25px;">Freja Kahle</a>
+                    </div>
+                    <div class="col" style="width:45%">
+                        <ul class="left hide-on-med-and-down">
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#extracurriculars">Involvements</a></li>
+                            <li><a href="../Resume.pdf" target="_blank">One-Page</a></li>
+                            <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Raytracing</a></li>
+                        <li><a href="#extracurriculars">Involvements</a></li>
+                        <li><a href="../Resume.pdf" target="_blank">One-Page</a></li>
+                        <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="right: 3em;"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="parallax-container" style="height: 550px;">
 
         <div class="section no-pad-bot">
             <div class="container">
@@ -43,82 +82,185 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="../images/GardenOfTheGods.jpg" alt="Unsplashed Background, Garden of the Gods, Colorado">
-            <div class="color-overlay"></div>
+        <a class="text-back bottomright" style="opacity: 0.6; font-size: 12px;" href="../images/GardenOfTheGods.jpg" target="blank">Image photographed at Garden Of The Gods, Colorado.</a>
+        <div class=" parallax "><img src="../images/GardenOfTheGods.jpg " alt="Unsplashed Background, Garden of the Gods, Colorado ">
+            <div class="color-overlay "></div>
         </div>
     </div>
 
     <div class="right-align">
-        <a class="grey-text text-lighten-1" href="../images/GardenOfTheGods.jpg" target="blank">Image photographed at Garden Of The Gods, Colorado.</a>
     </div>
-    <!-- <div class="container">
-        <div class="section row">
-            <div class="col s12 m7">
-                <h3 class="header center green-text text-darken-2" style="line-height: 8px">Who Am I?</h3>
-                <br>
-                <blockquote>
-                    <p class="flow-text"> My Name is Freja Kahle.<br> I'm a second year Computer Scie.<br> I am also an Eagle Scout of BSA Troop 888<br> My best subjects are math and science.<br> I enjoy playing video games and programming.<br> I also participate in multiple
-                        extracurriculars: <br> - VEX Robotics<br> - Dungeons and Dragons club<br> - Minecraft Club<br> - Boy Scouts<br> It's worth mentioning that I co-founded and lead Minecraft Club with Brent Miner and Elijah Mcvey.<br><br> My Dream
-                        job is in the field of Computer Science Research.<br> I hope to be able to help others through the code I write, even in small ways.<br><br>
-                    </p>
-                </blockquote>
+    <div class="container">
+        <div class="section ">
+            <div class="row anchor" id="skills">
+                <h3 class="header center blue-text text-darken-2 ">Skills</h3>
             </div>
-            <br>
-            <div class="col offset-s2 s8 offset-m1 m4 center">
-                <div class="row">
-                    <img class="responsive-img z-depth-3" src="images/Portrait.jpg">
-                    <br><br>
-                    <img class="responsive-img z-depth-3" src="images/Portrait2.jpg">
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/battery_acid.png">
-                        <span class="card-title">Loveland VEX Tournament</span>
-                    </div>
-                    <div class="card-content">
-                        <p>My VEX team, Battery Acid, ready for a match at the 2019 Loveland VEX Tournament.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  -->
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row">
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="../images/Techolympics2017.jpg" alt="Unsplashed background img 3"></div>
-    </div>
-
-
-
-    <footer class="page-footer teal">
-        <div class="right-align">
-            <a class="teal-text text-lighten-3" href="../images/Techolympics2017.jpg" target="blank">Image photographed at the Duke Energy Center in Cincinnati, Ohio.</a>
-        </div>
-        <div class="container">
             <div class="row">
+                <h4 class="header center blue-text text-darken-2 ">Technical Skills</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top: 0.75em; border-color: #405F9F;">
+                <div class="col s12 l3 offset-l1 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Fusion 360</li>
+                        <li>LabView</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-top: 0; margin-bottom: 0;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="col s12 l3 offset-l1 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Java</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Raspberry Pi</li>
+                        <li>Office Suite</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Javascript</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="header center blue-text text-darken-2 ">Soft Skills</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top:0.75em; border-color: #405F9F;">
+                <div class="col s12 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Communicative Clarity</li>
+                        <li>Servant Leadership</li>
+                        <li>Professional Writing</li>
+                    </ul>
+                </div>
+                <div class="col s12 m5 offset-m1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Critical Thinker</li>
+                        <li>Great listener</li>
+                        <li>Storytelling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row anchor" id="courses">
+                <h3 class="header center green-text text-darken-2 ">Relevant Coursework</h3>
+            </div>
+            <div class="row">
+                <h4 class="header center green-text text-darken-2 ">University Courses</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top: 0.75em; border-color: green;">
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Data Structures and Algorithms</li>
+                        <li>Python Programming</li>
+                        <li>Intro to Computer Systems</li>
+                        <li>Intro to Programming in C++</li>
+                    </ul>
+                </div>
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Discrete Structures</li>
+                        <li>Linear Algebra</li>
+                        <li>Calculus I & II</li>
+                        <li>Engineering and Design Thinking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="header center green-text text-darken-2 ">High School Courses</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top: 0.75em; border-color: green;">
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>AP Computer Science</li>
+                        <li>AP Physics</li>
+                    </ul>
+                </div>
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Digital Electronics</li>
+                        <li>Intro to Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center anchor" id="experience">
+                <h3 class="header orange-text text-darken-2 ">Work Experience</h3>
+            </div>
+            <div class="row center">
+                <h4 class="header orange-text text-darken-2">Jessee's Auto Repair</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: darkorange;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p style="text-align:left;">Cashier
+                        <span style="float:right;">June 2021 - August 2021</span>
+                    </p>
+                    <ul class="textlist">
+                        <li>Provided outstanding service to customers, kept shelves stocked, and tracked inventory and lottery information according to state guidelines</li>
+                        <li>Created a clean, safe environment for all customers and other employees by adhering to COVID-19 guidelines, cleaning floors, shelves, products, and restrooms daily or twice a day</li>
+                        <li>Handled money from register during close and secured it within company safe to be deposited at the end of each week</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center anchor" id="projects">
+                <h3 class="header purple-text text-darken-1">Relevant Projects</h3>
+            </div>
+            <div class="row center">
+                <h4 class="header purple-text text-darken-1">Fadebot Discord Bot</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: purple;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p style="text-align:left;">Personal Project
+                        <span style="float:right;">November 2020 - January 2022</span>
+                        <br>Co-Author: Adam Zdrojewski
+                        <br><a href="mailto:adam.zdrojewski2@gmail.com">adam.zdrojewski2@gmail.com</a>
+                    </p>
+                    <ul class="textlist">
+                        <li>Designed and programmed an asynchronous python program with the ability to stream audio to and from the internet, mix multiple digital audio signals and output one digital signal</li>
+                        <li>Utilized Discord's bot API to allow users to simultaneously listen to the same music/audio</li>
+                        <li>Debugged hundreds of errors including those relating to asynchronous programming issues, data manipulation errors, and errors when utilizing google's firestore database schema</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made with <a class="brown-text text-lighten-3" href="http://materializecss.com" target="blank">Materialize</a>
-                <br> Hosted using <a class="brown-text text-lighten-3" href="https://help.github.com/en/articles/what-is-github-pages" target="blank">Github Pages</a>
+    </div>
+    </div>
+    <div class="parallax-container valign-wrapper ">
+        <div class="section no-pad-bot ">
+            <div class="container ">
+                <div class="row ">
+                </div>
             </div>
+        </div>
+        <a class="text-back bottomright " style="opacity: 0.6; " href="../images/Techolympics2017.jpg " target="blank ">Image photographed at the Duke Energy Center in Cincinnati, Ohio.</a>
+        <div class="parallax "><img src="../images/Techolympics2017.jpg " alt="Unsplashed background img 3 "></div>
+    </div>
+
+
+
+    <footer class="page-footer teal ">
+        <div class="container " style="padding-bottom: 1em; ">
+            Made with <a class="brown-text text-lighten-3 " href="http://materializecss.com " target="blank ">Materialize</a>
+            <br> Hosted using <a class="brown-text text-lighten-3 " href="https://help.github.com/en/articles/what-is-github-pages " target="blank ">Github Pages</a>
         </div>
     </footer>
 
     <!--  Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/darkmode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script type="text/javascript " src="../js/darkmode.js "></script>
     <script>
         M.AutoInit();
         document.addEventListener('DOMContentLoaded', function() {
