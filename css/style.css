@@ -12,6 +12,7 @@
     --light-bkg: white;
     --dark-text: white;
     --light-text: black;
+    --transition-time: 750ms ease;
 }
 
 .spanhead {
@@ -43,6 +44,8 @@ nav.text-back .brand-logo {
     border-radius: 1em;
     padding-left: .5em;
     padding-right: .5em;
+    transition: color var(--transition-time);
+    transition: background-color var(--transition-time);
 }
 
 nav.text-back,
@@ -55,6 +58,8 @@ body.dark .text-back,
 body.dark .text-back * {
     background-color: var(--dark-bkg);
     color: var(--dark-text);
+    transition: color var(--transition-time);
+    transition: background-color var(--transition-time);
 }
 
 .text-back.rnd-top {
@@ -69,6 +74,10 @@ body.dark .text-back * {
     border-bottom-right-radius: 0.5em;
 }
 
+.text-back.no-rnd {
+    border-radius: 0;
+}
+
 .color-overlay {
     position: absolute;
     top: 0;
@@ -77,10 +86,12 @@ body.dark .text-back * {
     height: 100%;
     background-color: black;
     opacity: 0.0;
+    transition: opacity var(--transition-time);
 }
 
 .dark .color-overlay {
     opacity: 0.6;
+    transition: opacity var(--transition-time);
 }
 
 .bottomright {
@@ -105,4 +116,9 @@ body.dark .text-back * {
     border-radius: 1em;
     padding-left: 0.75em;
     padding-right: 0.75em;
+}
+
+html,
+body {
+    height: 100%;
 }
