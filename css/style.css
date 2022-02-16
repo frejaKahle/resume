@@ -58,8 +58,10 @@ body.dark .text-back,
 body.dark .text-back * {
     background-color: var(--dark-bkg);
     color: var(--dark-text);
-    transition: color var(--transition-time);
-    transition: background-color var(--transition-time);
+}
+
+body {
+    transition: color, background-color var(--transition-time);
 }
 
 .text-back.rnd-top {
@@ -138,4 +140,18 @@ body {
 
 .sidenav.closed {
     transform: translate(10px, 10px);
+}
+
+.transg {
+    background: radial-gradient(circle at center, var(--dark-bkg) 110px, #20242400 120px), linear-gradient(#5BCEFA, #F5A9B8, var(--light-bkg) 30% 70%, #F5A9B8, #5BCEFA);
+    padding: 10px;
+}
+
+.dark .transg {
+    background: radial-gradient(circle at center, var(--dark-bkg) 110px, #20242400 120px), linear-gradient(#5BCEFA, #F5A9B8, var(--dark-bkg) 35% 65%, #F5A9B8, #5BCEFA);
+}
+
+.transg::after {
+    content: 'hi';
+    z-index: 100;
 }
