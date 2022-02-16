@@ -101,12 +101,25 @@ body.dark .text-back * {
     font-size: 18px;
 }
 
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.bottomleft u,
+.bottomright u {
+    margin: 0;
+    padding: 0;
+}
+
 .textlist li {
     list-style-type: circle !important;
 }
 
 .anchor {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 .boxborder {
@@ -121,4 +134,8 @@ body.dark .text-back * {
 html,
 body {
     height: 100%;
+}
+
+.sidenav.closed {
+    transform: translate(10px, 10px);
 }
