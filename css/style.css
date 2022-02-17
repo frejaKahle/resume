@@ -143,15 +143,15 @@ body {
 }
 
 .transg {
-    background: radial-gradient(circle at center, var(--dark-bkg) 110px, #20242400 120px), linear-gradient(#5BCEFA, #F5A9B8, var(--light-bkg) 30% 70%, #F5A9B8, #5BCEFA);
+    background: radial-gradient(circle at center, var(--dark-bkg) 110px, #20242400 120px), linear-gradient(#5BCEFA, #F5A9B8, #F5A9B800 35% 65%, #F5A9B8, #5BCEFA);
     padding: 10px;
-}
-
-.dark .transg {
-    background: radial-gradient(circle at center, var(--dark-bkg) 110px, #20242400 120px), linear-gradient(#5BCEFA, #F5A9B8, var(--dark-bkg) 35% 65%, #F5A9B8, #5BCEFA);
 }
 
 .transg::after {
     content: 'hi';
     z-index: 100;
+}
+
+.sidenav {
+    width: min(200px, 50vw);
 }
