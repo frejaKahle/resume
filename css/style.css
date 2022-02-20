@@ -58,8 +58,10 @@ body.dark .text-back,
 body.dark .text-back * {
     background-color: var(--dark-bkg);
     color: var(--dark-text);
-    transition: color var(--transition-time);
-    transition: background-color var(--transition-time);
+}
+
+body {
+    transition: color, background-color var(--transition-time);
 }
 
 .text-back.rnd-top {
@@ -101,12 +103,25 @@ body.dark .text-back * {
     font-size: 18px;
 }
 
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.bottomleft u,
+.bottomright u {
+    margin: 0;
+    padding: 0;
+}
+
 .textlist li {
     list-style-type: circle !important;
 }
 
 .anchor {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 .boxborder {
@@ -121,4 +136,22 @@ body.dark .text-back * {
 html,
 body {
     height: 100%;
+}
+
+.sidenav.closed {
+    transform: translate(10px, 10px);
+}
+
+.transg {
+    background: radial-gradient(circle at center, var(--dark-bkg) 110px, #20242400 120px), linear-gradient(#5BCEFA, #F5A9B8, #F5A9B800 35% 65%, #F5A9B8, #5BCEFA);
+    padding: 10px;
+}
+
+.transg::after {
+    content: 'hi';
+    z-index: 100;
+}
+
+.sidenav {
+    width: min(200px, 50vw);
 }
