@@ -155,3 +155,18 @@ body {
 .sidenav {
     width: min(200px, 50vw);
 }
+
+.ifresume {
+    width: 100%;
+    height: auto;
+    opacity: 0.65;
+    transition: filter, opacity var(--transition-time);
+}
+
+.ifresume:hover {
+    opacity: 1;
+}
+
+.dark .ifresume {
+    filter: invert();
+}
