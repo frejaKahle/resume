@@ -15,9 +15,9 @@
             <i class="large material-icons" style="font-size: 36px;">memory</i>
         </a>
         <ul>
-            <li><a href="Resume.pdf" target="_blank" class="btn-floating teal darken-2"><i class="material-icons">file_download</i></a></li>
-            <li><a href="tel:513-222-3229" class="btn-floating teal darken-2"><i class="material-icons">phone</i></a></li>
-            <li><a href="mailto:frejakahle@gmail.com" class="btn-floating teal darken-2"><i class="material-icons">mail</i></a></li>
+            <li><a href="Resume.pdf" target="_blank" class="btn-floating teal darken-2" title="One Page Resume Download"><i class="material-icons">file_download</i></a></li>
+            <li><a href="tel:513-222-3229" class="btn-floating teal darken-2" title="Call"><i class="material-icons">phone</i></a></li>
+            <li><a href="mailto:kahlecw@mail.uc.edu" class="btn-floating teal darken-2" title="email"><i class="material-icons">mail</i></a></li>
             <li><a href="javascript:toggleViewMode()" id="view_toggle_button" class="btn-floating teal darken-2"><i class="material-icons">brightness_7</i></a></li>
         </ul>
     </div>
@@ -43,7 +43,7 @@
                         <ul class="left hide-on-med-and-down">
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#activities">Activities</a></li>
-                            <li><a href="Resume.pdf" target="_blank">One-Page</a></li>
+                            <li><a href="#resumeanchor">One-Page</a></li>
                             <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#activities">Activities</a></li>
-        <li><a href="Resume.pdf" target="_blank">One-Page</a></li>
+        <li><a href="#resumeanchor">One-Page</a></li>
         <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
     </ul>
     <div class="row center" style="margin: 3vh">
@@ -84,7 +84,7 @@
                     <br>
                     <a href="tel:513-222-3229" class="col m5 offset-m1 s6 center"><u><span class="flow-text text-back">(513)-222-3229</span></u></a>
                     <br class="hide-on-med-and-up">
-                    <a href="mailto:frejakahle@gmail.com" class="col m5 s6 center"><u><span class="flow-text text-back">frejakahle@gmail.com</span></u></a>
+                    <a href="mailto:kahlecw@mail.uc.edu" class="col m5 s6 center"><u><span class="flow-text text-back">kahlecw@mail.uc.edu</span></u></a>
                 </div>
             </div>
         </div>
@@ -330,13 +330,13 @@
             </div>
         </div>
     </div>
-    </div>
-    <div class="parallax-container" style="height: fit-content">
+    <div id="resumeanchor" class="anchor"></div>
+    <div class="parallax-container" style="height: fit-content;">
         <div class="section no-pad-bot">
             <div class="container" style="margin-bottom: 6vh;">
                 <div class="row center">
                     <h3><u>
-                        <a href="resume.pdf" target="_blank"><img src="images/resume.png" alt="Resume.pdf" class="ifresume" style="border-radius: 4vw;"></a>
+                        <canvas id="OPResume" class="ifresume "></canvas>
                     </u></h3>
                 </div>
             </div>
@@ -354,10 +354,13 @@
         </div>
     </footer>
 
-    <!--  Scripts-->
+    <!--  Scripts  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/darkmode.js"></script>
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script type="text/javascript" src="js/pdfview.js"></script>
     <script>
         M.AutoInit();
+        loadpdfp1('resume.pdf', 'OPResume');
     </script>
 </body>

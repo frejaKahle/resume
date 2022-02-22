@@ -158,9 +158,9 @@ body {
 
 .ifresume {
     width: 100%;
-    height: auto;
-    opacity: 0.65;
+    opacity: 0.75;
     transition: filter, opacity var(--transition-time);
+    border-radius: 2vw;
 }
 
 .ifresume:hover {
@@ -168,5 +168,5 @@ body {
 }
 
 .dark .ifresume {
-    filter: invert();
+    filter: invert(90%);
 }
